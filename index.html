@@ -6,7 +6,7 @@
     <title>Capacitar Docentes | Formación docente continua</title>
     <meta
       name="description"
-      content="Programas de capacitación docente con tutoría personalizada, metodología práctica y certificación oficial."
+      content="Capacitaciones para docentes con propuestas actualizadas, galería institucional, convenios y trayectoria educativa."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,10 +36,10 @@
                 900: '#312e81',
               },
               accent: '#14b8a6',
-              ink: '#111827',
+              ink: '#0f172a',
             },
             backgroundImage: {
-              'hero-gradient':
+              'page-gradient':
                 'radial-gradient(circle at top right, rgba(99,102,241,0.18), transparent 55%), radial-gradient(circle at bottom left, rgba(20,184,166,0.12), transparent 45%)',
             },
             boxShadow: {
@@ -52,11 +52,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-slate-50 text-ink">
-    <div class="min-h-screen bg-hero-gradient">
-      <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="min-h-screen bg-page-gradient">
+      <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur">
         <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
-          <a href="#inicio" class="flex items-center gap-2">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary-600 font-semibold text-white shadow-soft">
+          <a href="#inicio" class="flex items-center gap-3">
+            <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary-600 text-lg font-bold text-white shadow-soft">
               CD
             </span>
             <div>
@@ -65,23 +65,20 @@
             </div>
           </a>
           <nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
-            <a class="transition hover:text-primary-600" href="#programas">Programas</a>
-            <a class="transition hover:text-primary-600" href="#metodologia">Metodología</a>
-            <a class="transition hover:text-primary-600" href="#destacados">Destacados</a>
-            <a class="transition hover:text-primary-600" href="#testimonios">Testimonios</a>
+            <a class="transition hover:text-primary-600" href="#inicio">Inicio</a>
+            <a class="transition hover:text-primary-600" href="#ofertas">Ofertas académicas</a>
+            <a class="transition hover:text-primary-600" href="#galeria">Galería</a>
+            <a class="transition hover:text-primary-600" href="#convenios">Convenios</a>
+            <a class="transition hover:text-primary-600" href="#trayectoria">Trayectoria</a>
             <a class="transition hover:text-primary-600" href="#contacto">Contacto</a>
           </nav>
           <div class="hidden items-center gap-3 md:flex">
             <a
               href="#contacto"
-              class="rounded-full border border-primary-200 px-5 py-2 text-sm font-semibold text-primary-600 transition hover:border-primary-300 hover:bg-primary-50"
-              >Ingresar al Campus</a
-            >
-            <a
-              href="#agenda"
               class="rounded-full bg-primary-600 px-5 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-500"
-              >Inscribirme</a
             >
+              Solicitar información
+            </a>
           </div>
           <button
             id="mobile-menu-button"
@@ -96,193 +93,211 @@
         </div>
         <nav id="mobile-menu" class="hidden border-t border-slate-200 bg-white md:hidden">
           <div class="space-y-1 px-6 py-4 text-sm font-medium text-slate-600">
-            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#programas">Programas</a>
-            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#metodologia">Metodología</a>
-            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#destacados">Destacados</a>
-            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#testimonios">Testimonios</a>
+            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#inicio">Inicio</a>
+            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#ofertas">Ofertas académicas</a>
+            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#galeria">Galería</a>
+            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#convenios">Convenios</a>
+            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#trayectoria">Trayectoria</a>
             <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#contacto">Contacto</a>
-            <a class="block rounded-lg px-3 py-2 transition hover:bg-primary-50" href="#agenda">Inscribirme</a>
           </div>
         </nav>
       </header>
 
-      <main id="inicio" class="pt-20">
-        <section class="mx-auto max-w-6xl px-6 pb-24 pt-10 md:grid md:grid-cols-2 md:items-center md:gap-16">
-          <div class="space-y-6">
-            <span class="inline-flex items-center gap-2 rounded-full border border-primary-200 bg-white px-4 py-1 text-sm font-medium text-primary-600 shadow-sm">
-              <span class="inline-block h-2 w-2 rounded-full bg-accent"></span>
-              Capacitación continua 100% online
-            </span>
-            <h1 class="text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
-              Diseñá experiencias de aprendizaje memorables para tu comunidad educativa
-            </h1>
-            <p class="text-lg text-slate-600">
-              Actualizá tus estrategias pedagógicas con cursos diseñados por especialistas, acompañamiento personalizado y certificación oficial avalada por instituciones educativas reconocidas.
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <a
-                href="#agenda"
-                class="inline-flex items-center gap-2 rounded-full bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-500"
-              >
-                Ver próximas cohortes
-                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
-              <a
-                href="#contacto"
-                class="inline-flex items-center gap-2 rounded-full border border-primary-200 px-6 py-3 text-sm font-semibold text-primary-600 transition hover:border-primary-300 hover:bg-primary-50"
-              >
-                Solicitar información
-              </a>
-            </div>
-            <div class="flex flex-wrap items-center gap-6 text-sm text-slate-500">
-              <div class="flex items-center gap-2">
-                <svg class="h-5 w-5 text-primary-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5M9 3.75l6 16.5" />
-                </svg>
-                <span>+40 cursos actualizados</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <svg class="h-5 w-5 text-primary-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 21a7.5 7.5 0 00-15 0" />
-                </svg>
-                <span>Mentores expertos</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <svg class="h-5 w-5 text-primary-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m-7.5 4.5h9a2.25 2.25 0 002.25-2.25V5.25A2.25 2.25 0 0016.5 3h-9A2.25 2.25 0 005.25 5.25v12.75A2.25 2.25 0 007.5 20.25z" />
-                </svg>
-                <span>Certificación oficial</span>
+      <main>
+        <section id="inicio" class="mx-auto max-w-6xl px-6 pb-24 pt-16">
+          <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div class="space-y-6">
+              <span class="inline-flex items-center gap-2 rounded-full border border-primary-200 bg-white px-4 py-1 text-sm font-medium text-primary-600 shadow-sm">
+                <span class="inline-block h-2 w-2 rounded-full bg-accent"></span>
+                Formación docente con impacto real
+              </span>
+              <h1 class="text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
+                Innová la experiencia educativa de tu institución
+              </h1>
+              <p class="text-lg text-slate-600">
+                Inspirate con las iniciativas que acompañamos en todo el país. Explorá nuestros programas, conocé nuestra historia y descubrí cómo potenciamos el desarrollo profesional docente.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="#ofertas"
+                  class="inline-flex items-center gap-2 rounded-full bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-500"
+                >
+                  Ver ofertas destacadas
+                  <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+                <a
+                  href="#trayectoria"
+                  class="inline-flex items-center gap-2 rounded-full border border-primary-200 px-6 py-3 text-sm font-semibold text-primary-600 transition hover:border-primary-300 hover:bg-primary-50"
+                >
+                  Conocé nuestra trayectoria
+                </a>
               </div>
             </div>
-          </div>
-          <div class="relative mt-16 md:mt-0">
-            <div class="absolute -left-4 -top-6 hidden h-20 w-20 rounded-3xl bg-primary-100 md:block"></div>
-            <div class="absolute -right-6 bottom-10 hidden h-24 w-24 rounded-full border border-accent/40 md:block"></div>
-            <div class="relative overflow-hidden rounded-3xl border border-white/40 bg-white shadow-soft">
-              <img
-                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=80"
-                alt="Docentes en capacitación online"
-                class="h-full w-full object-cover"
-              />
-              <div class="absolute inset-x-6 bottom-6 rounded-2xl bg-white/90 p-4 shadow-lg backdrop-blur">
-                <p class="text-sm font-semibold text-primary-600">Acompañamiento permanente</p>
-                <p class="text-sm text-slate-500">
-                  Equipos pedagógicos que te guían paso a paso con retroalimentación personalizada.
-                </p>
+            <div class="relative">
+              <div
+                class="relative h-[360px] overflow-hidden rounded-3xl border border-white/50 bg-slate-900/5 shadow-soft sm:h-[480px] lg:h-[540px]"
+                data-carousel
+                aria-roledescription="carrusel"
+              >
+                <div class="sr-only" aria-live="polite" id="carousel-status">Mostrando iniciativa 1 de 3</div>
+                <article class="carousel-slide absolute inset-0 flex h-full flex-col justify-end bg-slate-900/40 text-white transition duration-500" data-index="0">
+                  <img
+                    src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80"
+                    alt="Docentes participando en taller virtual"
+                    class="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <div class="relative space-y-2 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent p-6">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-accent">Comunidades educativas</p>
+                    <h2 class="text-2xl font-semibold">Acompañamiento integral a equipos directivos</h2>
+                    <p class="text-sm text-slate-200">
+                      Diseñamos planes de mejora institucional con seguimiento semanal y recursos descargables.
+                    </p>
+                  </div>
+                </article>
+                <article class="carousel-slide absolute inset-0 hidden h-full flex-col justify-end bg-slate-900/40 text-white transition duration-500" data-index="1">
+                  <img
+                    src="https://images.unsplash.com/photo-1523580846011-434d65e9b2f6?auto=format&fit=crop&w=1200&q=80"
+                    alt="Docente guiando actividad participativa"
+                    class="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <div class="relative space-y-2 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent p-6">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-accent">Cursos certificados</p>
+                    <h2 class="text-2xl font-semibold">Actualizaciones pedagógicas con enfoque STEAM</h2>
+                    <p class="text-sm text-slate-200">
+                      Propuestas modulares de rápida aplicación en el aula y certificación homologada.
+                    </p>
+                  </div>
+                </article>
+                <article class="carousel-slide absolute inset-0 hidden h-full flex-col justify-end bg-slate-900/40 text-white transition duration-500" data-index="2">
+                  <img
+                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80"
+                    alt="Encuentro presencial con docentes compartiendo experiencias"
+                    class="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <div class="relative space-y-2 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent p-6">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-accent">Mentorías</p>
+                    <h2 class="text-2xl font-semibold">Comunidades de práctica y acompañamiento personalizado</h2>
+                    <p class="text-sm text-slate-200">
+                      Espacios colaborativos con especialistas para la reflexión pedagógica y el intercambio.
+                    </p>
+                  </div>
+                </article>
+                <div class="absolute inset-x-0 bottom-0 flex items-center justify-between px-4 pb-4">
+                  <button
+                    id="carousel-prev"
+                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-700 transition hover:bg-white"
+                    type="button"
+                    aria-label="Ver iniciativa anterior"
+                  >
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                  </button>
+                  <div class="flex items-center gap-2" aria-label="Indicadores del carrusel">
+                    <button class="h-2.5 w-2.5 rounded-full bg-white" type="button" aria-label="Ir a la iniciativa 1" data-carousel-indicator="0"></button>
+                    <button class="h-2.5 w-2.5 rounded-full bg-white/60 transition hover:bg-white" type="button" aria-label="Ir a la iniciativa 2" data-carousel-indicator="1"></button>
+                    <button class="h-2.5 w-2.5 rounded-full bg-white/60 transition hover:bg-white" type="button" aria-label="Ir a la iniciativa 3" data-carousel-indicator="2"></button>
+                  </div>
+                  <button
+                    id="carousel-next"
+                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-700 transition hover:bg-white"
+                    type="button"
+                    aria-label="Ver iniciativa siguiente"
+                  >
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5L15.75 12l-7.5 7.5" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="programas" class="bg-white py-24">
+        <section id="ofertas" class="bg-white py-24">
           <div class="mx-auto max-w-6xl px-6">
             <div class="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Programas</span>
-                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Especializaciones para cada etapa educativa</h2>
+                <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Ofertas académicas</span>
+                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Programas destacados para tu desarrollo profesional</h2>
                 <p class="mt-4 max-w-2xl text-base text-slate-600">
-                  Construí tu propio itinerario formativo con propuestas diseñadas para potenciar el aprendizaje en contextos presenciales, híbridos y virtuales.
+                  Descubrí propuestas con certificación oficial y acompañamiento tutorial. Diseñamos contenidos para todos los niveles educativos y equipos institucionales.
                 </p>
               </div>
               <a
-                href="#agenda"
+                href="ofertas-academicas.html"
                 class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:text-primary-500"
               >
-                Ver todas las cohortes
+                Ver más ofertas
                 <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </a>
             </div>
-
-            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <article class="group flex flex-col rounded-3xl border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <div class="flex items-center justify-between">
-                  <span class="rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-600">Duración 6 semanas</span>
-                  <span class="text-sm font-semibold text-primary-500">Nivel Inicial</span>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-slate-50/50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-700">
+                  Nivel Inicial
                 </div>
-                <h3 class="mt-6 text-xl font-semibold text-slate-900">Innovación en la primera infancia</h3>
+                <h3 class="text-xl font-semibold text-slate-900">Diseño de proyectos lúdicos y creativos</h3>
                 <p class="mt-3 text-sm text-slate-600">
-                  Diseñá experiencias lúdicas con foco en competencias socioemocionales y alfabetización temprana.
+                  Estrategias para promover el juego y la exploración como eje central del aprendizaje infantil.
                 </p>
-                <ul class="mt-4 space-y-2 text-sm text-slate-500">
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Tutorías semanales
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Material descargable
-                  </li>
+                <ul class="mt-6 flex flex-col gap-2 text-sm text-slate-500">
+                  <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary-500"></span>Duración: 6 semanas</li>
+                  <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary-500"></span>Incluye encuentros sincrónicos</li>
                 </ul>
                 <a
-                  href="#contacto"
+                  href="ofertas-academicas.html#nivel-inicial"
                   class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:text-primary-500"
                 >
-                  Solicitar temario
+                  Más información
                   <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </a>
               </article>
-
-              <article class="group flex flex-col rounded-3xl border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <div class="flex items-center justify-between">
-                  <span class="rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-600">Duración 8 semanas</span>
-                  <span class="text-sm font-semibold text-primary-500">Educación Primaria</span>
+              <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-slate-50/50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+                  Nivel Primario
                 </div>
-                <h3 class="mt-6 text-xl font-semibold text-slate-900">Competencias digitales y STEAM</h3>
+                <h3 class="text-xl font-semibold text-slate-900">Matemática significativa con enfoque STEAM</h3>
                 <p class="mt-3 text-sm text-slate-600">
-                  Potenciá la innovación en tu aula con herramientas digitales y proyectos interdisciplinarios.
+                  Recursos para integrar ciencia y tecnología en propuestas matemáticas colaborativas.
                 </p>
-                <ul class="mt-4 space-y-2 text-sm text-slate-500">
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Laboratorios virtuales
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Comunidad profesional
-                  </li>
+                <ul class="mt-6 flex flex-col gap-2 text-sm text-slate-500">
+                  <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Duración: 8 semanas</li>
+                  <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>Material descargable y foros</li>
                 </ul>
                 <a
-                  href="#contacto"
+                  href="ofertas-academicas.html#nivel-primario"
                   class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:text-primary-500"
                 >
-                  Solicitar temario
+                  Más información
                   <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </a>
               </article>
-
-              <article class="group flex flex-col rounded-3xl border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <div class="flex items-center justify-between">
-                  <span class="rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-600">Duración 10 semanas</span>
-                  <span class="text-sm font-semibold text-primary-500">Educación Secundaria</span>
+              <article class="flex h-full flex-col rounded-3xl border border-slate-200 bg-slate-50/50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-700">
+                  Secundaria y Superior
                 </div>
-                <h3 class="mt-6 text-xl font-semibold text-slate-900">Evaluación auténtica y feedback</h3>
+                <h3 class="text-xl font-semibold text-slate-900">Evaluación formativa y retroalimentación efectiva</h3>
                 <p class="mt-3 text-sm text-slate-600">
-                  Integra rúbricas, proyectos colaborativos y analíticas de aprendizaje para mejorar resultados.
+                  Instrumentos y criterios para potenciar la autonomía estudiantil y la mejora continua.
                 </p>
-                <ul class="mt-4 space-y-2 text-sm text-slate-500">
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Casos reales
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Retroalimentación individual
-                  </li>
+                <ul class="mt-6 flex flex-col gap-2 text-sm text-slate-500">
+                  <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary-500"></span>Duración: 5 semanas</li>
+                  <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-primary-500"></span>Clases en vivo y acompañamiento</li>
                 </ul>
                 <a
-                  href="#contacto"
+                  href="ofertas-academicas.html#secundaria"
                   class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:text-primary-500"
                 >
-                  Solicitar temario
+                  Más información
                   <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -292,500 +307,216 @@
           </div>
         </section>
 
-        <section id="metodologia" class="bg-slate-900 py-24">
-          <div class="mx-auto max-w-6xl px-6 text-white">
-            <div class="grid gap-12 md:grid-cols-2 md:items-center">
-              <div class="space-y-6">
-                <span class="text-sm font-semibold uppercase tracking-widest text-primary-300">Nuestra metodología</span>
-                <h2 class="text-3xl font-semibold">Aprendizaje flexible con resultados medibles</h2>
-                <p class="text-base text-slate-200">
-                  Combinamos clases sincrónicas, actividades asincrónicas y acompañamiento tutorial para que cada docente pueda implementar nuevas prácticas en su contexto real.
-                </p>
-                <div class="space-y-4">
-                  <div class="flex items-start gap-4">
-                    <div class="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-500/20 text-primary-300">1</div>
-                    <div>
-                      <h3 class="text-lg font-semibold">Diagnóstico inicial</h3>
-                      <p class="text-sm text-slate-300">
-                        Identificamos objetivos y desafíos pedagógicos para personalizar tu recorrido formativo.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-start gap-4">
-                    <div class="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-500/20 text-primary-300">2</div>
-                    <div>
-                      <h3 class="text-lg font-semibold">Mentoría constante</h3>
-                      <p class="text-sm text-slate-300">
-                        Tutorías en vivo, foros activos y feedback continuo para acompañarte durante todo el curso.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-start gap-4">
-                    <div class="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary-500/20 text-primary-300">3</div>
-                    <div>
-                      <h3 class="text-lg font-semibold">Implementación práctica</h3>
-                      <p class="text-sm text-slate-300">
-                        Proyectos transferibles, planificación de clases y recursos listos para aplicar en tu institución.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="space-y-6 rounded-3xl bg-white/5 p-8 backdrop-blur">
-                <h3 class="text-lg font-semibold">Beneficios diferenciales</h3>
-                <ul class="space-y-4">
-                  <li class="flex items-start gap-3 text-sm text-slate-200">
-                    <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-500/30 text-primary-100">✓</span>
-                    Clases en vivo grabadas para ver cuando quieras
-                  </li>
-                  <li class="flex items-start gap-3 text-sm text-slate-200">
-                    <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-500/30 text-primary-100">✓</span>
-                    Material descargable y banco de actividades por nivel
-                  </li>
-                  <li class="flex items-start gap-3 text-sm text-slate-200">
-                    <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-500/30 text-primary-100">✓</span>
-                    Certificados con puntaje oficial en diversas jurisdicciones
-                  </li>
-                  <li class="flex items-start gap-3 text-sm text-slate-200">
-                    <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-500/30 text-primary-100">✓</span>
-                    Comunidad privada para intercambio de buenas prácticas
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="destacados" class="bg-white py-24">
-          <div class="mx-auto max-w-6xl px-6">
-            <div class="mb-12 text-center">
-              <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Lo más elegido</span>
-              <h2 class="mt-3 text-3xl font-semibold text-slate-900">Cursos destacados del mes</h2>
-              <p class="mt-4 text-base text-slate-600">
-                Explorá propuestas diseñadas con instituciones aliadas y obtené beneficios exclusivos por inscripción anticipada.
+        <section id="galeria" class="mx-auto max-w-6xl px-6 py-24">
+          <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Galería</span>
+              <h2 class="mt-2 text-3xl font-semibold text-slate-900">Momentos que nos inspiran</h2>
+              <p class="mt-4 max-w-2xl text-base text-slate-600">
+                Compartimos instancias presenciales y virtuales donde docentes y equipos directivos fortalecen sus prácticas.
               </p>
             </div>
-            <div class="grid gap-6 lg:grid-cols-3">
-              <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
-                  alt="Docentes trabajando en equipo"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="space-y-4 p-8">
-                  <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-primary-500">
-                    <span>Inicio 5 de mayo</span>
-                    <span>Certificación UCES</span>
-                  </div>
-                  <h3 class="text-xl font-semibold text-slate-900">Diseño de aulas híbridas creativas</h3>
-                  <p class="text-sm text-slate-600">
-                    Estrategias para combinar experiencias presenciales y virtuales con foco en la participación estudiantil.
-                  </p>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="font-semibold text-primary-600">6 encuentros en vivo</span>
-                    <a class="font-semibold text-primary-600 hover:text-primary-500" href="#contacto">Reservar lugar</a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                <img
-                  src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80"
-                  alt="Docente con computadora"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="space-y-4 p-8">
-                  <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-primary-500">
-                    <span>Inicio 12 de mayo</span>
-                    <span>Certificación ISEP</span>
-                  </div>
-                  <h3 class="text-xl font-semibold text-slate-900">Evaluación formativa con inteligencia artificial</h3>
-                  <p class="text-sm text-slate-600">
-                    Descubrí herramientas digitales para diseñar evaluaciones adaptativas y feedback inmediato.
-                  </p>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="font-semibold text-primary-600">Modalidad taller</span>
-                    <a class="font-semibold text-primary-600 hover:text-primary-500" href="#contacto">Reservar lugar</a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                <img
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-                  alt="Docente preparando clase"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="space-y-4 p-8">
-                  <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-widest text-primary-500">
-                    <span>Inicio 20 de mayo</span>
-                    <span>Certificación UTN</span>
-                  </div>
-                  <h3 class="text-xl font-semibold text-slate-900">Planificación por proyectos interdisciplinarios</h3>
-                  <p class="text-sm text-slate-600">
-                    Aprendé a diseñar proyectos integrados con rúbricas claras y estrategias de evaluación auténtica.
-                  </p>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="font-semibold text-primary-600">Cupos limitados</span>
-                    <a class="font-semibold text-primary-600 hover:text-primary-500" href="#contacto">Reservar lugar</a>
-                  </div>
-                </div>
-              </article>
-            </div>
+            <a
+              href="galeria.html"
+              class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:text-primary-500"
+            >
+              Ver galería completa
+              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <figure class="group relative overflow-hidden rounded-3xl">
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+                alt="Docentes trabajando colaborativamente"
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </figure>
+            <figure class="group relative overflow-hidden rounded-3xl">
+              <img
+                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=800&q=80"
+                alt="Facilitadora brindando una clase virtual"
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </figure>
+            <figure class="group relative overflow-hidden rounded-3xl">
+              <img
+                src="https://images.unsplash.com/photo-1523580846011-434d65e9b2f6?auto=format&fit=crop&w=800&q=80"
+                alt="Encuentro presencial de capacitación"
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </figure>
+            <figure class="group relative overflow-hidden rounded-3xl">
+              <img
+                src="https://images.unsplash.com/photo-1523580846011-8d7518bbf3a7?auto=format&fit=crop&w=800&q=80"
+                alt="Equipo docente compartiendo conclusiones"
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </figure>
           </div>
         </section>
 
-        <section id="testimonios" class="bg-slate-50 py-24">
+        <section id="convenios" class="bg-white py-24">
           <div class="mx-auto max-w-6xl px-6">
             <div class="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Experiencias reales</span>
-                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Docentes que transformaron sus clases</h2>
+                <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Convenios</span>
+                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Alianzas estratégicas que potencian la formación</h2>
                 <p class="mt-4 max-w-2xl text-base text-slate-600">
-                  Conocé cómo nuestras propuestas impactan en instituciones educativas de todo el país.
+                  Trabajamos junto a universidades, ministerios y organizaciones para garantizar experiencias formativas de calidad.
                 </p>
               </div>
-              <div class="flex gap-3">
-                <button
-                  class="testimonial-prev inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-600 transition hover:border-primary-300 hover:text-primary-600"
-                  type="button"
-                >
-                  <span class="sr-only">Anterior</span>
-                  <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                  </svg>
-                </button>
-                <button
-                  class="testimonial-next inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-600 transition hover:border-primary-300 hover:text-primary-600"
-                  type="button"
-                >
-                  <span class="sr-only">Siguiente</span>
-                  <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>
-                </button>
-              </div>
+              <a
+                href="convenios.html"
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:text-primary-500"
+              >
+                Ver más convenios
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
             </div>
-
-            <div class="relative">
-              <div class="testimonial-track grid gap-6 md:grid-cols-2">
-                <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-                  <div class="flex items-center gap-3">
-                    <img
-                      src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80"
-                      alt="Foto de docente"
-                      class="h-12 w-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <p class="text-base font-semibold text-slate-900">Mariana Sosa</p>
-                      <p class="text-sm text-slate-500">Directora de Nivel Inicial - Córdoba</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-sm text-slate-600">
-                    “La plataforma es súper intuitiva y la calidad de los materiales nos permitió rediseñar proyectos institucionales con impacto directo en las familias.”
-                  </p>
-                  <div class="mt-4 flex items-center gap-1 text-primary-500">
-                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.062 3.261a1 1 0 00.95.69h3.427c.969 0 1.371 1.24.588 1.81l-2.77 2.012a1 1 0 00-.364 1.118l1.062 3.26c.3.922-.755 1.688-1.54 1.118l-2.77-2.013a1 1 0 00-1.175 0l-2.77 2.013c-.785.57-1.84-.196-1.54-1.118l1.062-3.26a1 1 0 00-.364-1.118L2.98 8.688c-.783-.57-.38-1.81.588-1.81h3.427a1 1 0 00.95-.69l1.062-3.26z" />
-                    </svg>
-                    <span class="text-xs font-semibold uppercase tracking-widest">Impacto institucional</span>
-                  </div>
-                </article>
-
-                <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-                  <div class="flex items-center gap-3">
-                    <img
-                      src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80"
-                      alt="Foto de docente"
-                      class="h-12 w-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <p class="text-base font-semibold text-slate-900">Leonardo Giménez</p>
-                      <p class="text-sm text-slate-500">Profesor de Matemática - Buenos Aires</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-sm text-slate-600">
-                    “La mentoría fue clave para aplicar herramientas de evaluación formativa. Hoy mis estudiantes participan más y reciben devoluciones inmediatas.”
-                  </p>
-                  <div class="mt-4 flex items-center gap-1 text-primary-500">
-                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.062 3.261a1 1 0 00.95.69h3.427c.969 0 1.371 1.24.588 1.81l-2.77 2.012a1 1 0 00-.364 1.118l1.062 3.26c.3.922-.755 1.688-1.54 1.118l-2.77-2.013a1 1 0 00-1.175 0l-2.77 2.013c-.785.57-1.84-.196-1.54-1.118l1.062-3.26a1 1 0 00-.364-1.118L2.98 8.688c-.783-.57-.38-1.81.588-1.81h3.427a1 1 0 00.95-.69l1.062-3.26z" />
-                    </svg>
-                    <span class="text-xs font-semibold uppercase tracking-widest">Resultados en aula</span>
-                  </div>
-                </article>
-
-                <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-                  <div class="flex items-center gap-3">
-                    <img
-                      src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80"
-                      alt="Foto de docente"
-                      class="h-12 w-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <p class="text-base font-semibold text-slate-900">Laura Cabrera</p>
-                      <p class="text-sm text-slate-500">Coordinadora TIC - Mendoza</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-sm text-slate-600">
-                    “Los proyectos STEAM generaron un cambio cultural en nuestra institución. Los equipos docentes se animaron a innovar sin miedo.”
-                  </p>
-                  <div class="mt-4 flex items-center gap-1 text-primary-500">
-                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.062 3.261a1 1 0 00.95.69h3.427c.969 0 1.371 1.24.588 1.81l-2.77 2.012a1 1 0 00-.364 1.118l1.062 3.26c.3.922-.755 1.688-1.54 1.118l-2.77-2.013a1 1 0 00-1.175 0l-2.77 2.013c-.785.57-1.84-.196-1.54-1.118l1.062-3.26a1 1 0 00-.364-1.118L2.98 8.688c-.783-.57-.38-1.81.588-1.81h3.427a1 1 0 00.95-.69l1.062-3.26z" />
-                    </svg>
-                    <span class="text-xs font-semibold uppercase tracking-widest">Transformación digital</span>
-                  </div>
-                </article>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex h-32 flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50/60 p-6 text-center">
+                <p class="text-lg font-semibold text-slate-800">Universidad Pedagógica Nacional</p>
+                <span class="mt-2 text-xs uppercase tracking-widest text-primary-500">Diplomaturas</span>
+              </div>
+              <div class="flex h-32 flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50/60 p-6 text-center">
+                <p class="text-lg font-semibold text-slate-800">Ministerio de Educación Provincial</p>
+                <span class="mt-2 text-xs uppercase tracking-widest text-primary-500">Capacitaciones oficiales</span>
+              </div>
+              <div class="flex h-32 flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50/60 p-6 text-center">
+                <p class="text-lg font-semibold text-slate-800">Red de Institutos Superiores</p>
+                <span class="mt-2 text-xs uppercase tracking-widest text-primary-500">Prácticas situadas</span>
+              </div>
+              <div class="flex h-32 flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50/60 p-6 text-center">
+                <p class="text-lg font-semibold text-slate-800">Fundación Innovar Educación</p>
+                <span class="mt-2 text-xs uppercase tracking-widest text-primary-500">Proyectos de innovación</span>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="agenda" class="bg-white py-24">
-          <div class="mx-auto max-w-6xl px-6">
-            <div class="grid gap-12 lg:grid-cols-[1.1fr,0.9fr]">
-              <div>
-                <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Próximas cohortes</span>
-                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Agenda 2024</h2>
-                <p class="mt-4 text-base text-slate-600">
-                  Elegí la propuesta que mejor se adapta a tus objetivos y reservá tu lugar con asesoramiento personalizado.
-                </p>
-                <div class="mt-8 space-y-4">
-                  <div class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50/60 p-6 md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <p class="text-sm font-semibold text-primary-600">Mayo 2024</p>
-                      <h3 class="text-lg font-semibold text-slate-900">Gamificación y narrativa transmedia</h3>
-                      <p class="text-sm text-slate-600">Modalidad intensiva · Incluye kit de recursos descargable</p>
-                    </div>
-                    <a class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-600 px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-primary-500 md:mt-0" href="#contacto">
-                      Reservar vacante
-                    </a>
-                  </div>
-                  <div class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50/60 p-6 md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <p class="text-sm font-semibold text-primary-600">Junio 2024</p>
-                      <h3 class="text-lg font-semibold text-slate-900">Educación inclusiva con enfoque UDL</h3>
-                      <p class="text-sm text-slate-600">Clases en vivo + tutorías individuales</p>
-                    </div>
-                    <a class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-600 px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-primary-500 md:mt-0" href="#contacto">
-                      Reservar vacante
-                    </a>
-                  </div>
-                  <div class="flex flex-col rounded-2xl border border-slate-200 bg-slate-50/60 p-6 md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <p class="text-sm font-semibold text-primary-600">Julio 2024</p>
-                      <h3 class="text-lg font-semibold text-slate-900">Liderazgo pedagógico para directivos</h3>
-                      <p class="text-sm text-slate-600">Certificación conjunta con instituciones aliadas</p>
-                    </div>
-                    <a class="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-600 px-4 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-primary-500 md:mt-0" href="#contacto">
-                      Reservar vacante
-                    </a>
-                  </div>
+        <section id="trayectoria" class="mx-auto max-w-6xl px-6 py-24">
+          <div class="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+            <div class="space-y-6">
+              <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Trayectoria</span>
+              <h2 class="text-3xl font-semibold text-slate-900">Más de una década acompañando procesos de mejora educativa</h2>
+              <p class="text-base text-slate-600">
+                Nuestra organización nace del trabajo colaborativo con instituciones educativas de diferentes contextos. Diseñamos experiencias formativas centradas en las necesidades reales del aula y la gestión institucional.
+              </p>
+              <p class="text-base text-slate-600">
+                Contamos con un equipo interdisciplinario de especialistas que brindan tutorías, mentorías y asesoramiento para la implementación de proyectos innovadores.
+              </p>
+              <div class="grid gap-6 sm:grid-cols-2">
+                <div class="rounded-3xl border border-primary-100 bg-white/70 p-6 shadow-sm">
+                  <p class="text-4xl font-semibold text-primary-600">+10</p>
+                  <p class="mt-2 text-sm text-slate-500">Años de experiencia en formación continua</p>
+                </div>
+                <div class="rounded-3xl border border-accent/30 bg-white/70 p-6 shadow-sm">
+                  <p class="text-4xl font-semibold text-accent">+12k</p>
+                  <p class="mt-2 text-sm text-slate-500">Docentes participantes en programas y mentorías</p>
                 </div>
               </div>
-              <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
-                <h3 class="text-xl font-semibold text-slate-900">Asesoramiento institucional</h3>
-                <p class="mt-3 text-sm text-slate-600">
-                  Diseñamos planes de formación a medida para equipos directivos, docentes y auxiliares.
-                </p>
-                <ul class="mt-6 space-y-4 text-sm text-slate-600">
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Diagnóstico inicial sin costo
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Reportes de avances y métricas de impacto
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-100 text-primary-600">✓</span>
-                    Acompañamiento post-curso para la implementación
-                  </li>
-                </ul>
-                <a
-                  href="#contacto"
-                  class="mt-8 inline-flex items-center gap-2 rounded-full border border-primary-200 px-5 py-3 text-sm font-semibold text-primary-600 transition hover:border-primary-300 hover:bg-primary-50"
-                >
-                  Solicitar propuesta institucional
-                  <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </a>
-              </div>
             </div>
-          </div>
-        </section>
-
-        <section class="bg-primary-600 py-20">
-          <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-center text-white">
-            <p class="text-sm font-semibold uppercase tracking-widest text-primary-200">Campus virtual</p>
-            <h2 class="text-3xl font-semibold">Una experiencia digital simple y cercana</h2>
-            <p class="max-w-3xl text-base text-primary-100">
-              Accedé a clases en vivo, actividades interactivas, foros, biblioteca digital y asistencia técnica permanente desde cualquier dispositivo.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-              <a href="#contacto" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary-600 shadow-sm transition hover:bg-primary-50">
-                Solicitar demo del campus
-              </a>
-              <a href="#programas" class="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                Ver programas
+            <div class="space-y-6 rounded-3xl border border-white/60 bg-white/80 p-8 shadow-lg">
+              <h3 class="text-xl font-semibold text-slate-900">Líneas de acción</h3>
+              <ul class="space-y-4 text-sm text-slate-600">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-2.5 w-2.5 flex-shrink-0 rounded-full bg-primary-500"></span>
+                  Acompañamiento a instituciones en la planificación estratégica y seguimiento de proyectos pedagógicos.
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-2.5 w-2.5 flex-shrink-0 rounded-full bg-primary-500"></span>
+                  Formación situada con tutorías personalizadas y materiales diseñados a medida de cada contexto.
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-2.5 w-2.5 flex-shrink-0 rounded-full bg-primary-500"></span>
+                  Investigación educativa y generación de recursos abiertos para la comunidad docente.
+                </li>
+              </ul>
+              <a
+                href="nosotros.html"
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:text-primary-500"
+              >
+                Conocer más sobre nosotros
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
               </a>
             </div>
           </div>
         </section>
 
-        <section class="bg-white py-24">
+        <section id="contacto" class="bg-slate-900 py-24 text-white">
           <div class="mx-auto max-w-6xl px-6">
-            <div class="grid gap-12 md:grid-cols-2">
-              <div>
-                <span class="text-sm font-semibold uppercase tracking-widest text-primary-500">Preguntas frecuentes</span>
-                <h2 class="mt-2 text-3xl font-semibold text-slate-900">Todo lo que necesitás saber</h2>
-                <p class="mt-4 text-base text-slate-600">
-                  Si no encontrás la respuesta que buscás, escribinos y nos pondremos en contacto en menos de 24 horas hábiles.
-                </p>
-              </div>
-              <div class="space-y-4">
-                <details class="group rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
-                  <summary class="flex cursor-pointer items-center justify-between text-sm font-semibold text-slate-900">
-                    ¿Los cursos otorgan puntaje docente?
-                    <span class="ml-4 inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-slate-500 transition group-open:rotate-45">+</span>
-                  </summary>
-                  <p class="mt-3 text-sm text-slate-600">
-                    Sí, contamos con certificaciones oficiales en distintas jurisdicciones. En cada propuesta detallamos la validez y la cantidad de puntaje otorgado.
-                  </p>
-                </details>
-                <details class="group rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
-                  <summary class="flex cursor-pointer items-center justify-between text-sm font-semibold text-slate-900">
-                    ¿Cómo accedo a la plataforma virtual?
-                    <span class="ml-4 inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-slate-500 transition group-open:rotate-45">+</span>
-                  </summary>
-                  <p class="mt-3 text-sm text-slate-600">
-                    Una vez confirmada tu inscripción recibirás un correo con usuario, contraseña y tutoriales para recorrer el campus. También brindamos asistencia técnica permanente.
-                  </p>
-                </details>
-                <details class="group rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
-                  <summary class="flex cursor-pointer items-center justify-between text-sm font-semibold text-slate-900">
-                    ¿Puedo inscribirme desde el exterior?
-                    <span class="ml-4 inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-slate-500 transition group-open:rotate-45">+</span>
-                  </summary>
-                  <p class="mt-3 text-sm text-slate-600">
-                    ¡Claro! Nuestros cursos son 100% online. Solo necesitás una conexión estable a internet y podrás abonar en dólares o pesos argentinos.
-                  </p>
-                </details>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="contacto" class="bg-slate-900 py-24">
-          <div class="mx-auto max-w-6xl px-6">
-            <div class="grid gap-12 lg:grid-cols-[0.9fr,1.1fr]">
-              <div class="space-y-6 text-white">
-                <span class="text-sm font-semibold uppercase tracking-widest text-primary-300">Contacto</span>
-                <h2 class="text-3xl font-semibold">Hablemos sobre tu próximo desafío pedagógico</h2>
+            <div class="grid gap-12 lg:grid-cols-[1fr_1fr]">
+              <div class="space-y-6">
+                <span class="text-sm font-semibold uppercase tracking-widest text-accent">Contacto</span>
+                <h2 class="text-3xl font-semibold">Conversemos sobre la formación que tu comunidad necesita</h2>
                 <p class="text-base text-slate-200">
-                  Completá el formulario y nuestro equipo se comunicará para asesorarte sobre programas, beneficios y bonificaciones vigentes.
+                  Escribinos para conocer la agenda vigente, propuestas a medida o solicitar asesoramiento institucional. Nuestro equipo te responderá a la brevedad.
                 </p>
-                <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-                  <h3 class="text-lg font-semibold">También podés escribirnos</h3>
-                  <ul class="mt-4 space-y-3 text-sm text-slate-200">
-                    <li class="flex items-center gap-3">
-                      <svg class="h-5 w-5 text-primary-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z" />
-                      </svg>
-                      <a class="hover:text-white" href="mailto:info@capacitar-docentes.com">info@capacitar-docentes.com</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <svg class="h-5 w-5 text-primary-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75l8.954 3.582a1 1 0 00.632 0L20.79 6.75M4.5 19.5h15a1.5 1.5 0 001.5-1.5v-9a1.5 1.5 0 00-1.5-1.5h-15A1.5 1.5 0 003 9v9a1.5 1.5 0 001.5 1.5z" />
-                      </svg>
-                      <span>Atención personalizada de lunes a viernes</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                      <svg class="h-5 w-5 text-primary-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.25C3 4.007 4.007 3 5.25 3h13.5C19.993 3 21 4.007 21 5.25v13.5A2.25 2.25 0 0118.75 21H5.25A2.25 2.25 0 013 18.75V5.25z" />
-                      </svg>
-                      <span>Seguinos en redes sociales @capacitar.docentes</span>
-                    </li>
-                  </ul>
+                <div class="grid gap-4 text-sm text-slate-300">
+                  <p class="flex items-center gap-2">
+                    <svg class="h-5 w-5 text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.5a2.25 2.25 0 01-2.26 0l-7.5-4.5a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    capacitaciones@capacitar-docentes.com
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <svg class="h-5 w-5 text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 4.5l9.265 7.87a1.5 1.5 0 001.97 0l9.265-7.87m-20.5 14.25h19.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H2.25A1.5 1.5 0 00.75 6v11.25a1.5 1.5 0 001.5 1.5z" />
+                    </svg>
+                    Suscribite a nuestro boletín mensual para recibir novedades.
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <svg class="h-5 w-5 text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75V21h15V9.75" />
+                    </svg>
+                    Buenos Aires, Córdoba y alianzas federales.
+                  </p>
                 </div>
               </div>
-              <form class="space-y-6 rounded-3xl border border-white/10 bg-white p-8 shadow-soft" action="#" method="post">
-                <div class="grid gap-6 md:grid-cols-2">
-                  <label class="block" for="nombre">
-                    <span class="text-sm font-semibold text-slate-700">Nombre completo</span>
-                    <input
-                      id="nombre"
-                      name="nombre"
-                      type="text"
-                      autocomplete="name"
-                      required
-                      class="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 focus:border-primary-400 focus:ring-primary-400"
-                      placeholder="Ej. Ana Pérez"
-                    />
-                  </label>
-                  <label class="block" for="email">
-                    <span class="text-sm font-semibold text-slate-700">Correo electrónico</span>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autocomplete="email"
-                      required
-                      class="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 focus:border-primary-400 focus:ring-primary-400"
-                      placeholder="Ej. ana@email.com"
-                    />
-                  </label>
-                </div>
-                <label class="block" for="telefono">
-                  <span class="text-sm font-semibold text-slate-700">Teléfono de contacto</span>
+              <form class="space-y-5 rounded-3xl bg-white/10 p-8 shadow-lg backdrop-blur">
+                <div>
+                  <label class="mb-2 block text-sm font-medium text-white" for="nombre">Nombre completo</label>
                   <input
-                    id="telefono"
-                    name="telefono"
-                    type="tel"
-                    autocomplete="tel"
-                    class="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 focus:border-primary-400 focus:ring-primary-400"
-                    placeholder="Código de área + número"
+                    id="nombre"
+                    type="text"
+                    name="nombre"
+                    placeholder="María Pérez"
+                    class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+                    required
                   />
-                </label>
-                <label class="block" for="interes">
-                  <span class="text-sm font-semibold text-slate-700">Programa de interés</span>
-                  <select
-                    id="interes"
-                    name="interes"
-                    class="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 focus:border-primary-400 focus:ring-primary-400"
-                  >
-                    <option value="">Seleccioná una opción</option>
-                    <option value="inicial">Nivel Inicial</option>
-                    <option value="primaria">Educación Primaria</option>
-                    <option value="secundaria">Educación Secundaria</option>
-                    <option value="institucional">Plan institucional</option>
-                  </select>
-                </label>
-                <label class="block" for="mensaje">
-                  <span class="text-sm font-semibold text-slate-700">Contanos en qué podemos ayudarte</span>
+                </div>
+                <div>
+                  <label class="mb-2 block text-sm font-medium text-white" for="email">Correo electrónico</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="nombre@institucion.edu.ar"
+                    class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="mb-2 block text-sm font-medium text-white" for="mensaje">Mensaje</label>
                   <textarea
                     id="mensaje"
                     name="mensaje"
                     rows="4"
-                    class="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 focus:border-primary-400 focus:ring-primary-400"
-                    placeholder="Compartinos objetivos, necesidades de tu institución o consultas específicas"
-                  ></textarea>
-                </label>
-                <label class="flex items-start gap-3 text-xs text-slate-500" for="terminos">
-                  <input
-                    id="terminos"
-                    name="terminos"
-                    type="checkbox"
+                    placeholder="Comentanos tu interés y el tipo de formación que necesitás."
+                    class="w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
                     required
-                    class="mt-1 rounded border-slate-300 text-primary-600 focus:ring-primary-500"
-                  />
-                  Acepto que Capacitar Docentes se contacte para brindarme información sobre programas y beneficios vigentes.
-                </label>
+                  ></textarea>
+                </div>
                 <button
                   type="submit"
-                  class="w-full rounded-full bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-500"
+                  class="w-full rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-teal-400"
                 >
                   Enviar consulta
                 </button>
@@ -795,60 +526,44 @@
         </section>
       </main>
 
-      <footer class="border-t border-slate-200 bg-white">
-        <div class="mx-auto grid max-w-6xl gap-12 px-6 py-12 md:grid-cols-4">
-          <div class="space-y-3">
-            <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary-600 font-semibold text-white shadow-soft">CD</span>
-            <p class="text-sm text-slate-500">
-              Acompañamos a docentes e instituciones en la construcción de experiencias educativas innovadoras.
-            </p>
+      <footer class="border-t border-slate-200 bg-white/90">
+        <div class="mx-auto max-w-6xl px-6 py-12 text-sm text-slate-600">
+          <div class="grid gap-8 md:grid-cols-4">
+            <div class="md:col-span-2 space-y-3">
+              <p class="text-base font-semibold text-slate-900">Capacitar Docentes</p>
+              <p>
+                Somos una organización especializada en la formación continua de educadores con más de 15 años de
+                trayectoria acompañando equipos directivos y docentes en toda la región.
+              </p>
+            </div>
+            <div class="space-y-3">
+              <p class="text-base font-semibold text-slate-900">Contacto</p>
+              <ul class="space-y-2">
+                <li>Av. Educación 1234, Buenos Aires</li>
+                <li>
+                  <a class="transition hover:text-primary-600" href="mailto:info@capacitardocentes.com.ar"
+                    >info@capacitardocentes.com.ar</a
+                  >
+                </li>
+                <li><a class="transition hover:text-primary-600" href="tel:+541123456789">+54 11 2345 6789</a></li>
+              </ul>
+            </div>
+            <div class="space-y-3">
+              <p class="text-base font-semibold text-slate-900">Recursos</p>
+              <ul class="space-y-2">
+                <li><a class="transition hover:text-primary-600" href="#ofertas">Ofertas académicas</a></li>
+                <li><a class="transition hover:text-primary-600" href="#galeria">Galería</a></li>
+                <li><a class="transition hover:text-primary-600" href="#convenios">Convenios</a></li>
+                <li><a class="transition hover:text-primary-600" href="#trayectoria">Nuestra trayectoria</a></li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h3 class="text-sm font-semibold text-slate-900">Programas</h3>
-            <ul class="mt-4 space-y-2 text-sm text-slate-500">
-              <li><a class="hover:text-primary-600" href="#programas">Nivel Inicial</a></li>
-              <li><a class="hover:text-primary-600" href="#programas">Educación Primaria</a></li>
-              <li><a class="hover:text-primary-600" href="#programas">Educación Secundaria</a></li>
-              <li><a class="hover:text-primary-600" href="#agenda">Instituciones</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-sm font-semibold text-slate-900">Recursos</h3>
-            <ul class="mt-4 space-y-2 text-sm text-slate-500">
-              <li><a class="hover:text-primary-600" href="#metodologia">Metodología</a></li>
-              <li><a class="hover:text-primary-600" href="#destacados">Cursos destacados</a></li>
-              <li><a class="hover:text-primary-600" href="#testimonios">Testimonios</a></li>
-              <li><a class="hover:text-primary-600" href="#contacto">Contacto</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-sm font-semibold text-slate-900">Suscribite</h3>
-            <p class="mt-4 text-sm text-slate-500">
-              Recibí novedades, recursos descargables y becas disponibles en tu mail.
-            </p>
-            <form class="mt-4 flex gap-2" action="#">
-              <input
-                type="email"
-                name="suscripcion"
-                class="w-full rounded-full border border-slate-200 px-4 py-2 text-sm focus:border-primary-400 focus:ring-primary-400"
-                placeholder="Tu correo"
-                required
-              />
-              <button
-                type="submit"
-                class="inline-flex items-center justify-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-primary-500"
-              >
-                Enviar
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="border-t border-slate-200 bg-slate-50 py-6">
-          <div class="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-6 text-xs text-slate-500 md:flex-row">
-            <p>© 2024 Capacitar Docentes. Todos los derechos reservados.</p>
-            <div class="flex gap-4">
-              <a class="hover:text-primary-600" href="#">Política de privacidad</a>
-              <a class="hover:text-primary-600" href="#">Términos y condiciones</a>
+          <div class="mt-10 flex flex-col gap-4 border-t border-slate-200 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
+            <p>&copy; <span id="current-year"></span> Capacitar Docentes. Todos los derechos reservados.</p>
+            <div class="flex flex-wrap items-center gap-4">
+              <a class="transition hover:text-primary-600" href="privacidad.html">Política de privacidad</a>
+              <a class="transition hover:text-primary-600" href="terminos.html">Términos y condiciones</a>
+              <a class="transition hover:text-primary-600" href="#contacto">Contacto</a>
             </div>
           </div>
         </div>
